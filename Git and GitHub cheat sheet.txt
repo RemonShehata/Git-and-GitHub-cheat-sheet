@@ -1,0 +1,29 @@
+GIT cheat sheet
+
+diff: find the difference between two files(not using git).
+git diff first_commit_id second_commit_id: find the difference between two versions of a file (using git) the old version followed by the new version.
+git clone repository_URL: download a repository from the Internet
+git checkout commit_ID : to switch to an older version
+git init: create a new repository
+git status: shows which files has changed since the last commit
+git add file_name: adds files to the staging area
+git commit -m "Commit message": add a commit with a commit message
+git diff (no argument): to view the difference between working directory and staging area.
+git diff --staged: to view the difference between staging area and repository.
+git reset --hard: discards any changes in either the working directory or the staging area (careful with this command because it's irreversible).
+git checkout master: 
+git branch : shows the current branch
+git branch branch-name: create a new branch 
+git log --graph --oneline master coins: visual representation of the commit history two branches.
+git checkout -b new_branch_name: is equivalent to 2 commands; git branch new_branch_name -> git checkout new_branch_name
+git merge branch_name1 branch_name2: merges branch2 into branch1.
+git show commit_ID: show the diff between commit and it's parent
+git branch -d branch_name: deletes branch_name(although the commits will still be there).
+git remote: show the current remotes.
+git remote add remote_name remote_url: create a new remote using the repository URL.
+git remote -v: shows more info about the remote suck as fetch and pull locations.
+git push remote_name branch_name: pushes the commits from branch_name of local repository to the remote.
+git pull remote_name branch_name: pulls the commits from remote to local repository.
+git fetch: to update the local copy of the remote branch
+git pull origin master = git fetch origin + git merge master origin/master
+git branch -a: shows all the branches 
